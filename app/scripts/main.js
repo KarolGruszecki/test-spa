@@ -1,13 +1,16 @@
 function enter(url) {
-	$("content").load(url);
+    $("#content").load(url);
 }
 
 
-$(window).on("hashchange", function(){
-	// console.log(location.hash);
-	var hash = location.hash.substr(1);
-	var page = "tamplates/" + hash + ".html";
-	console.log(page)
-	$("#content").load(page);
+$(window).on("hashchange", function () {
+    var hash = location.hash.substr(1);
+    console.log(hash);
+
+    var page = "templates/" + hash + ".html";
+    console.log(page);
+
+    enter(page);
 });
-enter("tamplates/home.html");
+
+enter("templates/home.html");

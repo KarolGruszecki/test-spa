@@ -1,16 +1,17 @@
 ul {
-	list-style: none;
-	display: inline-block;
-	padding: 10px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
 }
 
 li {
-	display: inline-block;
+    display: inline-block;
     text-align: center;
     text-transform: uppercase;
     padding: 5px;
     border-right: solid 1px #eee;
 }
-li:firstchild {
-	border-left: solid 1px #eee;
+
+li:first-child {
+    border-left: solid 1px #eee;
 }
